@@ -27,5 +27,5 @@ const classes = buttonStyles({ size: "icon" });
 type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">;
 
 export function Button({ variant, size, ...props }: ButtonProps) {
-  return <button className={buttonStyles({ variant, size })} />;
+  return <Button className={buttonStyles({ variant, size })} />;
 }

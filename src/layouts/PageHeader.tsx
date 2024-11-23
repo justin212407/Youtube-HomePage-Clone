@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import logo from "../assets/Logo.png";
-import { Button } from "../components/button";
+import { Button } from "../components/Button";
 
 export function PageHeader() {
   return (
