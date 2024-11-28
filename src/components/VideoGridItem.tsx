@@ -54,13 +54,18 @@ export function VideoGridItem({
       <a href={`/watch?v=${id}`} className="relative aspect-video">
         <img
           src={thumbnailUrl}
-          className="block w-full h-full object-cover rounded-xl"
+          className={`block w-full h-full object-cover rounded-xl transition-[border-radius] duration-200 ${
+            isVideoPlaying ? "rounded-none" : "rounded-xl"
+          }`}
+          alt={`${title} thumbnail`}
         />
         <div className="absolute bottom-1 right-1 bg-secondary-dark text-secondary text-sm px-0.5 rounded">
           {formatDuration(duration)}
         </div>
         <video
-          className="block h-full object-cover absolute inset-0 transition-opacity"
+          className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-200 delay-200 ${
+            isVideoPlaying ? "block opacity-100" : "hidden opacity-0"
+          }`}
           ref={videoRef}
           muted
           playsInline
