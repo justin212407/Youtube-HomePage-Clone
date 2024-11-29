@@ -63,8 +63,8 @@ export function VideoGridItem({
           {formatDuration(duration)}
         </div>
         <video
-          className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-200 delay-200 ${
-            isVideoPlaying ? "block opacity-100" : "hidden opacity-0"
+          className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-opacity duration-200 ${
+            isVideoPlaying ? "opacity-100 delay-200" : "opacity-0"
           }`}
           ref={videoRef}
           muted

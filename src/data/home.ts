@@ -146,3 +146,34 @@ export const videos = [
       "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
 ];
+
+export const playlists = [
+  { id: "1", name: "Frontend and Backend" },
+  { id: "2", name: "Favorites" },
+  { id: "3", name: "React" },
+  { id: "4", name: "Non-dev" },
+  { id: "5", name: "TypeScript" },
+];
+
+export const subscriptions = [
+  {
+    id: "1",
+    channelName: "Web Dev Simplified",
+    imgUrl: "https://i.ytimg.com/vi/eYPyIq5Y3Rk/maxresdefault.jpg",
+  },
+  {
+    id: "2",
+    channelName: "Fireship",
+    imgUrl: "https://i.ytimg.com/vi/kxT8-C1vmd4/maxresdefault.jpg",
+  },
+  {
+    id: "3",
+    channelName: "Caleb Curry",
+    imgUrl: "https://i.ytimg.com/vi/i2JVQdLnkAY/maxresdefault.jpg",
+  },
+  {
+    id: "4",
+    channelName: "Kevin Powell",
+    imgUrl: "https://i.ytimg.com/vi/apdD69J4bEc/maxresdefault.jpg",
+  },
+];
